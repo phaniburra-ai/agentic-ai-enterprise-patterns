@@ -2,58 +2,141 @@
 
 `Agentic AI` • `Enterprise Workflows` • `Governance` • `Control Plane` • `Multi-Agent Systems`
 
-A practical set of design patterns for building **enterprise-grade agentic AI systems**.
-
-This repository focuses on how AI moves from copilots to **governed execution systems** that operate reliably within enterprise workflows.
+Reusable design patterns for building **enterprise-grade agentic AI systems**.
 
 ---
 
 ## Overview
 
-Agentic AI is not just about better models.
+Agentic AI is not just about generating responses.
 
-It is about building systems that can:
+It is about systems that:
 
-- interpret goals  
-- plan and execute multi-step tasks  
+- execute workflows  
 - interact with enterprise systems  
-- operate within defined policies  
-- deliver measurable business outcomes  
+- operate within governance boundaries  
+- deliver real outcomes  
 
-Most enterprise AI initiatives stall because they lack:
+Most implementations fail due to:
 
-- structured orchestration patterns  
-- governance and control layers  
-- integration with business workflows  
-- clear boundaries for autonomy  
+- lack of orchestration  
+- weak governance  
+- missing workflow integration  
+- unclear autonomy boundaries  
 
-This repository provides reusable patterns to address those gaps.
+This repository provides structured patterns for **enterprise AI execution**.
 
 ---
 
 ## What is Agentic AI?
 
-Agentic AI refers to systems that:
+Agentic AI systems:
 
-- understand objectives  
-- break work into steps  
-- make decisions within constraints  
-- invoke tools and systems  
-- adapt based on context and outcomes  
+- understand goals  
+- plan actions  
+- invoke tools  
+- execute workflows  
 
-In enterprise environments, this must be paired with:
+They require governance, observability, and control.
 
-- governance  
-- observability  
-- auditability  
-- policy enforcement  
+---
+
+## Agentic Control Plane Overview
+
+                    ┌──────────────────────┐
+                    │    Users / Systems   │
+                    └──────────▲───────────┘
+                               │
+                    ┌──────────┼───────────┐
+                    │   Control Plane      │
+                    │ • Policies           │
+                    │ • Orchestration      │
+                    │ • State / Monitoring │
+                    │ • Human-in-the-loop  │
+                    │ • Error Handling     │
+                    └──────┬────────┬──────┘
+                           │        │
+               ┌───────────▼─┐   ┌──▼───────────┐
+               │   Agents    │   │    Tools     │
+               │ • Planner   │   │ • APIs       │
+               │ • Execution │   │ • Systems    │
+               └──────▲──────┘   └────▲─────────┘
+                      │               │
+                      └──────┬────────┘
+                             │
+                    ┌────────▼────────┐
+                    │ Enterprise Sys  │
+                    │ ERP / CRM / HCM │
+                    └─────────────────┘
 
 ---
 
 ## Repository Structure
 
-```text
-patterns/    -> reusable agentic design patterns
-use-cases/   -> enterprise workflow examples
-diagrams/    -> orchestration and control-plane visuals
-templates/   -> reusable templates
+- patterns/    → pattern definitions  
+- use-cases/   → workflow examples  
+- diagrams/    → visuals  
+- templates/   → templates  
+
+---
+
+## Core Patterns
+
+- Tool Use  
+- Planning  
+- Policy-Gated Agent  
+- Multi-Agent Orchestration  
+- Human-in-the-Loop  
+- Agentic Control Plane  
+
+---
+
+## What These Patterns Enable
+
+- enterprise workflow automation  
+- governed AI execution  
+- scalable systems  
+- safe autonomy  
+
+---
+
+## Typical Questions Answered
+
+- When should agents act vs escalate?  
+- How to govern decisions?  
+- How to design multi-agent systems?  
+- How to integrate with enterprise systems?  
+
+---
+
+## Design Principles
+
+- execution over generation  
+- governed autonomy  
+- workflow integration  
+- observability and trust  
+
+---
+
+## Related Work
+
+AI Factory Design Platform  
+https://aifactorydesignplatform.com  
+
+GitHub  
+https://github.com/phaniburra-ai/ai-factory-design-platform  
+
+---
+
+## Perspective
+
+The future of enterprise AI is not copilots.
+
+It is **agentic systems** that execute business workflows.
+
+---
+
+## Author
+
+Phani Burra  
+AI Factory Architect
